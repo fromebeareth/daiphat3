@@ -1,45 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Travel Photo Collection</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>China's Skyscrapers</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f0f0f0;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
     }
+
     header {
-      background-color: #2c3e50;
-      padding: 20px;
-      text-align: center;
+      background-color: #1c1c1c;
       color: white;
+      text-align: center;
+      padding: 40px 20px;
     }
-    h1 {
+
+    header h1 {
       margin: 0;
+      font-size: 2.5em;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 15px;
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
       padding: 20px;
     }
-    .gallery img {
+
+    .building {
+      background-color: white;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .building img {
       width: 100%;
       height: auto;
-      border-radius: 8px;
-      transition: transform 0.3s ease;
     }
-    .gallery img:hover {
-      transform: scale(1.03);
+
+    .building-content {
+      padding: 15px;
     }
+
+    .building-content h2 {
+      margin-top: 0;
+      font-size: 1.6em;
+    }
+
+    .building-content p {
+      margin: 0.5em 0;
+    }
+
     footer {
-      background-color: #34495e;
+      background-color: #1c1c1c;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
     }
   </style>
@@ -47,23 +71,56 @@
 <body>
 
   <header>
-    <h1>Travel Photo Collection</h1>
-    <p>Explore beautiful places around the world</p>
+    <h1>China's Iconic Skyscrapers</h1>
+    <p>Explore some of the tallest and most stunning buildings in China</p>
   </header>
 
-  <main class="gallery">
-    <img src="https://source.unsplash.com/featured/?beach" alt="Beach">
-    <img src="https://source.unsplash.com/featured/?mountains" alt="Mountains">
-    <img src="https://source.unsplash.com/featured/?city" alt="City">
-    <img src="https://source.unsplash.com/featured/?forest" alt="Forest">
-    <img src="https://source.unsplash.com/featured/?desert" alt="Desert">
-    <img src="https://source.unsplash.com/featured/?island" alt="Island">
-    <img src="https://source.unsplash.com/featured/?waterfall" alt="Waterfall">
-    <img src="https://source.unsplash.com/featured/?sunset" alt="Sunset">
-  </main>
+  <div class="container">
+
+    <div class="building">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Shanghai_Tower_2015.jpg/1280px-Shanghai_Tower_2015.jpg" alt="Shanghai Tower">
+      <div class="building-content">
+        <h2>Shanghai Tower</h2>
+        <p><strong>Height:</strong> 632 meters</p>
+        <p><strong>Location:</strong> Shanghai</p>
+        <p>The tallest building in China and the second tallest in the world, known for its twisting design and sustainable technology.</p>
+      </div>
+    </div>
+
+    <div class="building">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Ping_An_Finance_Centre%2C_Shenzhen%2C_Guangdong%2C_China.jpg/1280px-Ping_An_Finance_Centre%2C_Shenzhen%2C_Guangdong%2C_China.jpg" alt="Ping An Finance Center">
+      <div class="building-content">
+        <h2>Ping An Finance Center</h2>
+        <p><strong>Height:</strong> 599 meters</p>
+        <p><strong>Location:</strong> Shenzhen</p>
+        <p>This skyscraper is the 4th tallest in the world, featuring office space, hotels, and retail centers.</p>
+      </div>
+    </div>
+
+    <div class="building">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/CTF_Guangzhou_Finance_Center_2017.jpg/1280px-CTF_Guangzhou_Finance_Center_2017.jpg" alt="Guangzhou CTF Finance Centre">
+      <div class="building-content">
+        <h2>Guangzhou CTF Finance Centre</h2>
+        <p><strong>Height:</strong> 530 meters</p>
+        <p><strong>Location:</strong> Guangzhou</p>
+        <p>A mixed-use skyscraper that includes apartments, hotels, and offices, known for its sleek and elegant structure.</p>
+      </div>
+    </div>
+
+    <div class="building">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/China_Zun_June_2021.jpg/1280px-China_Zun_June_2021.jpg" alt="CITIC Tower (China Zun)">
+      <div class="building-content">
+        <h2>CITIC Tower (China Zun)</h2>
+        <p><strong>Height:</strong> 528 meters</p>
+        <p><strong>Location:</strong> Beijing</p>
+        <p>Shaped like an ancient wine vessel called “Zun,” this is Beijing’s tallest building and a symbol of the city’s skyline.</p>
+      </div>
+    </div>
+
+  </div>
 
   <footer>
-    <p>&copy; 2025 Travel Photo Collection. All rights reserved.</p>
+    <p>&copy; 2025 China's Skyscrapers Gallery. All rights reserved.</p>
   </footer>
 
 </body>
